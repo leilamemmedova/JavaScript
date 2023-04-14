@@ -24,9 +24,15 @@ console.log(getLastItem(arr5));
 console.log(getLastItem(arr6));
 
 /////////////////////////////////////3.Find the Index
-
 let indexString = function (arr, str) {
-  return arr.indexOf(str);
+  for(i=0 ;i<arr.length ;i++){
+    if(arr[i]==str){
+      return(i)
+    }else{
+      continue
+    }
+  }
+  // return arr.indexOf(str);
 };
 console.log(indexString(["hi", "edabit", "fgh", "abc"], "fgh"));
 console.log(indexString(["Red", "blue", "Blue", "Green"], "blue"));
