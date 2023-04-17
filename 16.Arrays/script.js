@@ -39,9 +39,19 @@ let numbers = [
   4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2,
   5, 6, 3, 7, 3, 7,
 ];
-let num = 0;
-let sevenNumbers = numbers.map((element , index) => element == 7 ?num+=index :null );
-console.log(sevenNumbers)
+  let summ =[]
+  numbers.forEach((el,i) => {
+    if(el ==7){
+      summ.push(i)
+    }
+    return summ
+  });
+  let sumOfIndex = 0;
+  summ.forEach((el)=>{
+    sumOfIndex +=el
+    return sumOfIndex
+  })
+  console.log(sumOfIndex)
 
 
 
