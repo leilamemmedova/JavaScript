@@ -52,12 +52,13 @@ checkbox.style.accentColor = "red";
 radio2.style.accentColor = "blue";
 radio1.style.accentColor = "blue";
 
-time.style.border="1px solid black"
+time.style.border="1px solid blue"
 time.style.width="100px"
 time.style.height="30px"
 time.style.display="flex"
 time.style.justifyContent="center"
 time.style.alignItems="center"
+time.style.color="blue"
 
 letsButton.innerHTML = "Let's start...";
 nameLabel.innerHTML = "Name";
@@ -65,35 +66,45 @@ surnameLabel.innerHTML = "Surname";
 submitButton.innerHTML = "Submit";
 time.innerHTML=`00:${15}`
 
-document.getElementById("submit").disabled=true
+document.getElementById("submit").disabled=true;
+document.getElementById("lets").disabled=false;
+document.getElementById("next").disabled = false;
+
 
 let interval;
 let counter = 15;
 letsButton.addEventListener("click", function(){
     interval=setInterval(()=>{
-        // time.innerHTML=`00:${time}`
-        counter-=1
-        time.innerText=`00:${counter}`
-        document.getElementById("submit").disabled=false
+      counter -= 1;
+      time.innerText = `00:${counter}`;
+      document.getElementById("submit").disabled = false;
+      document.getElementById("lets").disabled = true;
+      document.getElementById("next").disabled=true
 
-        if(counter<10){
-            time.style.borderColor="red"
-            time.style.color="red"
-        }
-        if(counter===0){
-            time.innerHTML="You missed ):"
-            clearInterval(interval)
-        }
+      if (counter < 10) {
+        time.style.borderColor = "red";
+        time.style.color = "red";
+      }
+      if (counter === 0) {
+        time.innerHTML = "You missed ):";
+        clearInterval(interval);
+        document.getElementById("lets").disabled = false;
+      }
     },1000)
 
+
 })
-
-
+letsButton.onclick=function(){
+    this.value=15+1
+}
 
 nextButton.innerHTML="Next Page >"
 
 let interval2;
 nextButton.addEventListener("click",function(){
     alert("finished")
-})
 
+})
+nextButton.onclick=function(){
+    document.getElementById("next").disabled=false
+}
