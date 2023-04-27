@@ -58,11 +58,14 @@ checkbox.addEventListener("click", function () {
   }
 });
 
-document.getElementById("submit").disabled=false
-submitBtn.addEventListener("click",function(){
-    if(nameInput.value && surnameInput.value && checkbox.checked ){
-        submitBtn.disabled=true
+submitBtn.disabled = "true";
+checkbox.addEventListener("click", function(){
+    if(nameInput.value && surnameInput.value  && checkbox.checked  ){
+      submitBtn.removeAttribute("disabled")
+    }else{
+      submitBtn.disabled = "true";
     }
 })
+
 
 
