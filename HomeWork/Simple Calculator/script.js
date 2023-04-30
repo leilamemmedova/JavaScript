@@ -8,49 +8,46 @@ let division = document.querySelector(".division");
 let reset = document.querySelector(".reset");
 
 resultValue.innerHTML = 0;
-function calculateFunction(a, b) {
   typeof resultValue === "number";
   addition.addEventListener("click", function () {
-    if (a.value === "" || b.value === "") {
+    if (value1.value === "" || value2.value === "") {
       alert("value is empty");
     } else {
-      let sum = parseFloat(a.value) + parseFloat(b.value);
+      let sum = parseFloat(value1.value) + parseFloat(value2.value);
       resultValue.innerHTML = sum;
     }
   });
   substract.addEventListener("click", function () {
-    if (a.value === "" || b.value === "") {
+    if (value1.value === "" || value2.value === "") {
       alert("value is empty");
     } else {
-      let substract = parseFloat(a.value) - parseFloat(b.value);
+      let substract = parseFloat(value1.value) - parseFloat(value2.value);
       resultValue.innerHTML = substract;
     }
   });
   multiply.addEventListener("click", function () {
-    if (a.value === "" || b.value === "") {
+    if (value1.value === "" || value2.value === "") {
       alert("value is empty");
     } else {
-      let multiply = parseFloat(a.value) * parseFloat(b.value);
+      let multiply = parseFloat(value1.value) * parseFloat(value2.value);
       resultValue.innerHTML = multiply;
     }
   });
   division.addEventListener("click", function () {
-    if (a.value === "" || b.value === "") {
+    if (value1.value === "" || value2.value === "") {
       alert("value is empty");
     } else {
-      let division = parseFloat(a.value) / parseFloat(b.value);
+      let division = parseFloat(value1.value) / parseFloat(value2.value);
       resultValue.innerHTML = division;
     }
   });
   reset.addEventListener("click", function () {
-    if (a.value === "" || b.value === "") {
+    if (value1.value === "" || value2.value === "") {
       alert("value is empty");
     } else {
-      a.value=""
-      b.value=""
+      value1.value=""
+      value2.value=""
       resultValue.innerHTML=0
     }
   });
-}
 
-calculateFunction(value1, value2);
