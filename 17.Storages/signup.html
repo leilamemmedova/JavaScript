@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,55 +11,92 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
-</head>
-<body>
-    <section class="vh-100" style="background-color: #508bfc;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-      
-                  <h3 class="mb-5">Sign in</h3>
-      
-                  <div class="form-outline mb-4">
-                    <input type="text" id="typeEmailX-2" class="form-control form-control-lg" />
-                    <label class="form-label" for="typeEmailX-2">Username</label>
-                  </div>
-      
-
-                  <div class="form-outline mb-4">
-                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-                    <label class="form-label" for="typeEmailX-2">Email</label>
-                  </div>
-      
-                  <div class="form-outline mb-4">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-                    <label class="form-label" for="typePasswordX-2">Password</label>
-                  </div>
-      
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-start mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                    <label class="form-check-label" for="form1Example3"> check me <output></output></label>
-                  </div>
-      
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-      
-                  <hr class="my-4">
-      
-                  <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
-                    type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
-                  <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
-                    type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
-      
-                </div>
-              </div>
+  </head>
+  <body>
+    <section>
+      <form class="myform" action="">
+        <div class="row m-5 text-center">
+          <h1>SignUp</h1>
+          <div class="col col-4"></div>
+          <div class="col col-4">
+            <div class="row text-center m-4">
+              <label for="name">User name</label>
+              <input id="name" type="text" />
+            </div>
+            <div class="row text-center m-4">
+              <label for="email">Email</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="row text-center m-4">
+              <label for="password">Password</label>
+              <input id="password" type="password" />
+            </div>
+            <div class="row text-center m-4">
+              <input class="checkbox" type="checkbox" />
+            </div>
+            <div class="row text-center m-4">
+              <button class="submit width-70 h-40" type="submit">
+                Sign In
+              </button>
             </div>
           </div>
+          <div class="col col-4"></div>
         </div>
-      </section>
-  
+      </form>
+    </section>
+
+
+
+
+
+    <!-- <div class="container mt-5" style="width: 400px">
+      <h1 class="text-center mb-5">Sign Up</h1>
+
+      <form id="myForm">
+        <div class="mb-3">
+          <label for="exampleInputUserName" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputUserName"
+            aria-describedby="emailHelp"
+          />
+          <div id="user" class="form-text">
+            We'll never share your username with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+
+        <button type="submit" id="btn" class="btn btn-primary">Submit</button>
+      </form>
+    </div> -->
     <script src="./signup.js"></script>
-</body>
+  </body>
 </html>

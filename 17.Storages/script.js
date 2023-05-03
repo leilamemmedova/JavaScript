@@ -7,80 +7,56 @@ button.addEventListener("click", function () {
   localStorage.setItem("age", 23);
 });
 
-// //1.1\\
+//1\\
 // for (let i = 0; i < localStorage.length; i++) {
 //   console.log(localStorage.length);
 // }
 
-// //1.2\\
+//2\\
 // for (let i = 0; i < localStorage.length; i++) {
-//   let key = localStorage.key(i);
-//   console.log(key);
+//   console.log(localStorage.key(i));
 // }
 
-// //1.3\\
+//3\\
 // for (let i = 0; i < localStorage.length; i++) {
-//   let key = localStorage.key(i);
-//   console.log(localStorage.getItem(key));
+//   let keys=localStorage.key(i)
+//   let values=localStorage.getItem(keys)
+//   console.log(values)
+
+//   console.log(localStorage.getItem(localStorage.key(i)));
 // }
 
-// //4\\
+//4\\
+// console.log(localStorage.key(0));
 
-// let key = localStorage.key(0);
-// console.log(key);
-
-// //4.1\\
-// let arr=[]
+//4.1\\
+// let arr = [];
 // for (let i = 0; i < localStorage.length; i++) {
 //   arr.push(localStorage.key(i));
 // }
-// console.log(arr);
+// console.log(arr)
 
-// //5\\
+//5\\
+// console.log(localStorage.getItem(localStorage.key(0)));
 
-// // let firstKey=localStorage.key(0)
-// // let firstValue=localStorage.getItem(firstKey)
-// // console.log(firstValue);
-
-// console.log(localStorage.getItem(localStorage.key(0)))
-
-// //5.1\\
-
-// let newArr = [];
+//5.1\\
+// let arr=[]
 // for (let i = 0; i < localStorage.length; i++) {
-//   let newKeys=localStorage.key(i)
-//   let getValue=localStorage.getItem(newKeys)
-//   newArr.push(getValue);
+//   arr.push(localStorage.getItem(localStorage.key(i)));
 // }
-// console.log(newArr)
+// console.log(arr);
 
 //6\\
-let deleteBtn=document.querySelector(".delete")
-deleteBtn.addEventListener("click",function(){
-    localStorage.removeItem(localStorage.key(0))
-})
+// let deleteBtn=document.querySelector(".delete")
+// deleteBtn.addEventListener("click" , function(){
+//   localStorage.removeItem(localStorage.key(0))
+// })
 
 //6.1\\
-let emptyBtn=document.querySelector(".empty")
-emptyBtn.addEventListener("click",function(){
-    localStorage.clear()
-})
-
-
-//7\\
-
-
-
-// let arr = [];
-// for (let i = 0; i < localStorage.length; i++) {
-// //   let getKey = localStorage.key(i);
-// //   let getValue = localStorage.getItem(getKey);
-// //   arr.push(getValue);
-
-//   arr.push(localStorage.getItem(localStorage.key(i)))
-// }
-
-// console.log(arr);
+// let emptyBtn = document.querySelector(".empty");
+// emptyBtn.addEventListener("click", function () {
+//   localStorage.clear();
+// });
 
 
 
