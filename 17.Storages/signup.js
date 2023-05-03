@@ -2,7 +2,6 @@ let userName = document.querySelector("#name");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let checkbox = document.querySelector("#checkbox");
-let button = document.querySelector(".submit");
 let myForm = document.querySelector(".myform");
 
 const users = JSON.parse(localStorage.getItem("users")) || [];
@@ -18,6 +17,6 @@ myForm.addEventListener("submit", (event) => {
 
   if (user.username && user.email) {
     users.push(user);
-    localStorage.setItem("users", JSON.stringify(users));
+    localStorage.setItem("users",JSON.stringify(users));
   }
 });
