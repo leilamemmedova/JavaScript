@@ -39,7 +39,6 @@ function deleteUser(id){
   axios.delete(`${BASE_URL}/${id}`)
   getAllUsers()
 }
-
 addBtn.addEventListener("click", function(){
     window.location = "addUsers.html";
 })

@@ -11,7 +11,6 @@ axios(BASE_URL).then((res) => console.log(res.data));
 axios(`${BASE_URL}/${id}`).then((res)=>{
     firstName.value=res.data.companyName
     email.value=res.data.contactTitle
-});
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
@@ -19,11 +18,9 @@ form.addEventListener("submit", function(event){
       companyName: firstName.value,
       contactTitle: email.value
     };
-    axios.patch(`${BASE_URL}/${id}`,obj).then(()=>{
-        window.location="index.html"
-    })
-})
-
-editBtn.addEventListener("click", function(){
+    axios.patch(`${BASE_URL}/${id}`,obj)
     window.location="index.html"
 })
+});
+
+
