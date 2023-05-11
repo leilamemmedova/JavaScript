@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "Gunay",
+      "lastname": "Hummetovaaa",
+      "email": "gunay@mail.ru",
+      "id": 2
+    },
+    {
+      "username": "Ilahe",
+      "lastname": "Quliyeva",
+      "email": "ilahe@mail.ru",
+      "id": 4
+    },
+    {
+      "username": "Tokyo ",
+      "lastname": "Traders",
+      "email": "Yoshi@mail.ru",
+      "id": 5
+    },
+    {
+      "username": "Ali ",
+      "lastname": "Traders",
+      "email": "Yoshi@mail.ru",
+      "id": 12
+    },
+    {
+      "username": "Wakko ",
+      "lastname": "Traders",
+      "email": "Yoshi@mail.ru",
+      "id": 11
+    },
+    {
+      "username": "Pavlova ",
+      "lastname": "Ian Devling",
+      "email": "Ian@mail.ru",
+      "id": 6
+    },
+    {
+      "username": "Liquids ",
+      "lastname": "Charlotte Cooper",
+      "email": "Cooper@mail.ru",
+      "id": 8
+    },
+    {
+      "username": "Karkki ",
+      "lastname": "Anne Heikkonen",
+      "email": "Anne@mail.ru",
+      "id": 9
+    }
+  ]
+}
