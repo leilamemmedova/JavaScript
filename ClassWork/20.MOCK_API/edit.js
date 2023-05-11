@@ -6,7 +6,7 @@ let email = document.querySelector(".email");
 let editBtn= document.querySelector(".edit")
 
 let BASE_URL = `https://northwind.vercel.app/api/suppliers`;
-axios(BASE_URL).then(s) => getAllUsers(response.data);
+axios(BASE_URL).then() => getAllUsers(response.data);
 
 axios(`${BASE_URL}/${id}`).then((res)=>{
     firstName.value=res.data.companyName
