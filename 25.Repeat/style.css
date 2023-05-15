@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container nav ul li {
+  list-style: none;
+  padding: 30px;
+}
+.header .container nav ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.header .container nav ul li a:hover {
+  border: 1px solid red;
+  color: red;
+}
+.header .container .menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header .container nav {
+    display: none;
+  }
+  .header .container .menu {
+    display: block;
+  }
+}
+
+.free-life {
+  margin-bottom: 15vh;
+  height: 100vh;
+  margin-top: 100px;
+  background-image: url(./image/free-life.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  .free-life {
+    background-image: url(./image/bcg-sec1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.user-list {
+  width: 100%;
+  height: 100vh;
+}
+h2 {
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  width: 13%;
+  border: 1px solid red;
+  height: 2px;
+  bottom: 0;
+}
+
+table tr td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cards {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+.cards .card {
+  margin: 10px;
+}
+.cards .card .first {
+  margin-left: 20px;
+}
+.cards .card .second {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.cards .card .second img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.btns {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
