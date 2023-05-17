@@ -1,9 +1,14 @@
 {
-    "users": [
-        {
-            "username": "Leyla",
-            "email": "leyla@gmail.com",
-            "phone": "0998436393"
-        }
-    ]
+  "users": [
+    {
+      "username": "Leyla",
+      "email": "leyla@gmail.com",
+      "phone": "0998436393"
+    },
+    {
+      "username": "Fidan",
+      "email": "fidan@gmail.com",
+      "phone": "0998436393"
+    }
+  ]
 }

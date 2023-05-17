@@ -4,25 +4,23 @@ let deleteBtn=document.querySelector(".delete")
 let editBtn=document.querySelector(".edit")
 let addBtn=document.querySelector(".addBtn")
 
-let BASE_URL = "https://northwind.vercel.app/api/suppliers";
+let BASE_URL = "http://localhost:8080/users";
 // axios(BASE_URL).then((response)=>console.log(response.data))
 
-axios(BASE_URL)
-  .then((response) => getAllUsers(response.data))
-
-
-function getAllUsers(arr){
+async function getAllUsers(){
+  const res= await axios(BASE_URL)
+  const data =await res.data
   cards.innerHTML=""
-      arr.forEach((item) => {
+      data.forEach((item) => {
         cards.innerHTML += `
             <div class="col col-6">
           <div class="card d-flex justify-content-between align-items-center m-3">
             <div class="left">
                 <div class="row">
-                    <span>${item.companyName}</span>
+                    <span>${item.username}</span>
                 </div>
                 <div class="row">
-                    <span>${item.contactTitle}</span>
+                    <span>${item.email}</span>
                 </div>
             </div>
             <div class="right">
@@ -34,14 +32,19 @@ function getAllUsers(arr){
         `;
       })
 }
+getAllUsers()
 
-function deleteUser(id){
-  axios.delete(`${BASE_URL}/${id}`)
+async function deleteUser(id){
+  await axios.delete(`${BASE_URL}/${id}`);
   getAllUsers()
 }
 addBtn.addEventListener("click", function(){
-    window.location = "addUsers.html";
+  window.location = "addUsers.html";
 })
+
+async function goToEditPage(userId) {
+  window.location.href = `edit.html?id=${userId}`;
+}
 
 
 

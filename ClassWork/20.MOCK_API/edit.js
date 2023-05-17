@@ -1,26 +1,33 @@
 let id = new URLSearchParams(window.location.search).get("id");
 
 let form = document.querySelector(".edit-form");
-let firstName = document.querySelector(".firstname");
+let userName = document.querySelector(".username");
 let email = document.querySelector(".email");
 let editBtn= document.querySelector(".edit")
 
-let BASE_URL = `https://northwind.vercel.app/api/suppliers`;
-axios(BASE_URL).then((response)=> getAllUsers(response.data));
+let BASE_URL = `http://localhost:8080/users`;
 
-axios(`${BASE_URL}/${id}`).then((res)=>{
-    firstName.value=res.data.companyName
-    email.value=res.data.contactTitle
+async function getUserById(){
+  const res= await axios(BASE_URL)
+  const data= await res.data
+    userName.value=data.username
+    email.value=data.email
+}
+getUserById()
 
-form.addEventListener("submit", function(event){
-    event.preventDefault()
-    let obj = {
-      companyName: firstName.value,
-      contactTitle: email.value
-    };
-    axios.patch(`${BASE_URL}/${id}`,obj)
-    window.location="index.html"
+async function editUser(){
+  let obj = {
+    username: userName.value,
+    email: email.value
+  };
+ await axios.patch(`${BASE_URL}/${id}`,obj)
+}
+
+form.addEventListener("submit",async function(e){
+  e.preventDefault()
+  editUser()
+  window.location="index.html"
 })
-});
+;
 
 
