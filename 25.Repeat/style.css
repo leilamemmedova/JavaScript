@@ -30,7 +30,7 @@
 }
 .header .container nav ul li {
   list-style: none;
-  padding: 30px;
+  padding: 20px;
 }
 .header .container nav ul li a {
   text-decoration: none;
@@ -58,7 +58,7 @@
 .free-life {
   margin-bottom: 15vh;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 90px;
   background-image: url(./image/free-life.jpg);
   background-repeat: no-repeat;
   background-size: cover;

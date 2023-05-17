@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "img": "",
+      "name": "Alfredo",
+      "surname": "Linguini",
+      "email": "alfredo@milinator.com",
+      "date": "5/14/2023"
+    },
+    {
+      "id": "3",
+      "img": "",
+      "name": "Chef",
+      "surname": "Skinner",
+      "email": "chef@milinator.com",
+      "date": "5/14/2023"
+    },
+    {
+      "id": "4",
+      "img": "",
+      "name": "Gusteau",
+      "surname": "Auguste",
+      "email": "gusteau@milinator.com",
+      "date": "5/14/2023"
+    },
+    {
+      "id": "5",
+      "img": "",
+      "name": "Remy",
+      "surname": "Mouse",
+      "email": "remy@milinator.com",
+      "date": "5/14/2023"
+    }
+  ]
+}
