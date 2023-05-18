@@ -1,14 +1,19 @@
 {
   "users": [
     {
+      "id": "2",
       "username": "Leyla",
-      "email": "leyla@gmail.com",
-      "phone": "0998436393"
+      "email": "leyla@gmail.com"
     },
     {
-      "username": "Fidan",
-      "email": "fidan@gmail.com",
-      "phone": "0998436393"
+      "username": "Ulfat",
+      "email": "ulfat@gmail.com",
+      "id": "OzEPOMM"
+    },
+    {
+      "username": "Sevil",
+      "email": "sevil.gmail.com",
+      "id": "d6D87Tq"
     }
   ]
 }
