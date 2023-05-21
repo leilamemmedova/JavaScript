@@ -10,11 +10,11 @@ async function getAllData(){
   allData=data
   filtered=filtered.length ?filtered :data
   tBody.innerHTML=""
-  filtered.forEach(item => {
+  filtered.forEach(item => 
     tBody.innerHTML += `
            <tr>
-                <td>1</td>
-                <td><img src="./image/ego.jpg" alt="" /></td>
+                <td>${item.id}</td>
+                <td><img src="./image/alfredo.jpg" alt="" /></td>
                 <td>${item.name}</td>
                 <td>${item.surname}</td>
                 <td>${item.email}</td>
@@ -22,11 +22,11 @@ async function getAllData(){
                 <td>
                   <a href="adduser.html?id=${item.id}" class="btn btn-success edit">Edit</a>
                   <button class="btn btn-danger delete" onclick=deleteFunc(${item.id})>Delete</button>
-                  <a href="" class="btn btn-primary">Add Fav</a>
+                  <a class="btn btn-primary" onclick=favFunc(${item.id})>Add Fav</a>
                 </td>
             </tr>      
-    `;
-  });
+    `
+  );
 }
 getAllData()
 
@@ -35,7 +35,21 @@ async function deleteFunc(id){
   filtered=allData.filter((item)=> item.id!=id)
   getAllData()
 }
+const favData= JSON.parse(localStorage.getItem("favData")) || []
 
+async function favFunc(id){
+  let res= await axios(`${BASE_URL}/${id}`)
+  let data= await res.data
+  
+ let available= favData.find((item)=> item.id==data.id)
+    if(!available){
+      favData.push(data)
+      localStorage.setItem("favData", JSON.stringify(favData))
+    }else{
+      alert("hahaha")
+    }
+
+}
 
 
 
