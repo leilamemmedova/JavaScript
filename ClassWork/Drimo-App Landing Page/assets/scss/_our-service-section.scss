@@ -1,0 +1,51 @@
+#our-service-section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
+  .our-service-section {
+    #title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 36px;
+        font-weight: 100;
+        color: gray;
+        &::after {
+          margin-top: 22px;
+          content: "";
+          display: block;
+          border: 1px solid gray;
+          width: 40%;
+        }
+      }
+      p {
+        margin-top: 30px;
+        width: 50%;
+        color: gray;
+      }
+    }
+    .hosting {
+      .row {
+        margin-top: 50px;
+        padding: 0 20px;
+
+        .col-lg-3 {
+          padding: 15px;
+          img{
+            margin: 5px 0;
+          }
+          h6 {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+

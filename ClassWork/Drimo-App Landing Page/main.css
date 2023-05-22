@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header nav ul {
+  display: flex;
+  align-items: center;
+}
+header .header nav ul li {
+  padding: 0;
+  list-style: none;
+  padding-right: 18px;
+}
+header .header nav ul li a {
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+header .header nav ul li .btn {
+  color: rgb(40, 181, 206);
+}
+header .header nav .bars {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  header .header nav ul li {
+    display: none;
+  }
+  header .header nav .bars {
+    display: block;
+    font-size: 24px;
+    color: rgb(0, 162, 255);
+  }
+}
+#hero-section {
+  position: relative;
+  margin-top: 13vh;
+  width: 100%;
+  background-image: url(./assets/image/server-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+#hero-section #special-offer {
+  position: absolute;
+  display: inline;
+  padding: 20px 120px;
+  background-color: rgb(235, 132, 59);
+  top: 45px;
+  left: 490px;
+  color: white;
+  font-size: 23px;
+}
+#hero-section .hero-section {
+  margin-top: 40px;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#hero-section .hero-section .left h2 {
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 13px;
+  font-size: 45px;
+}
+#hero-section .hero-section .left h3 {
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#hero-section .hero-section .left h5 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 20px;
+  color: white;
+}
+#hero-section .hero-section .left .icons {
+  display: flex;
+  margin-bottom: 40px;
+}
+#hero-section .hero-section .left .icons .lrow {
+  margin-top: 20px;
+  margin-right: 8%;
+}
+#hero-section .hero-section .left .icons .lrow div {
+  color: white;
+  margin: 10px;
+}
+#hero-section .hero-section .left .icons .lrow div i {
+  color: white;
+  margin-right: 7px;
+}
+#hero-section .hero-section button {
+  padding: 10px 25px;
+  background-color: rgb(235, 132, 59);
+  color: white;
+  border: none;
+}
+#hero-section .hero-section .right {
+  padding-left: 30px;
+}
+#hero-section .hero-section .right img {
+  width: 450px;
+}
+
+@media only screen and (max-width: 991px) {
+  #hero-section #special-offer {
+    display: none;
+  }
+  #hero-section .hero-section {
+    padding-top: 50px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #hero-section .hero-section .left {
+    width: 100%;
+  }
+  #hero-section .hero-section .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  #hero-section .hero-section .right img {
+    width: 500px;
+  }
+}
+#our-service-section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(255, 255, 255);
+}
+#our-service-section .our-service-section #title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#our-service-section .our-service-section #title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 36px;
+  font-weight: 100;
+  color: gray;
+}
+#our-service-section .our-service-section #title h2::after {
+  margin-top: 22px;
+  content: "";
+  display: block;
+  border: 1px solid gray;
+  width: 40%;
+}
+#our-service-section .our-service-section #title p {
+  margin-top: 30px;
+  width: 50%;
+  color: gray;
+}
+#our-service-section .our-service-section .hosting .row {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+#our-service-section .our-service-section .hosting .row .col-lg-3 {
+  padding: 15px;
+}
+#our-service-section .our-service-section .hosting .row .col-lg-3 img {
+  margin: 5px 0;
+}
+#our-service-section .our-service-section .hosting .row .col-lg-3 h6 {
+  padding-top: 20px;
+}
+
+#happy-client {
+  margin-top: 30px;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(101, 203, 221);
+}
+#happy-client .happy-client {
+  margin-top: 30px;
+  width: 100%;
+}
+#happy-client .happy-client .happy-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#happy-client .happy-client .happy-title h2 {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: 100;
+  color: rgb(255, 252, 252);
+}
+#happy-client .happy-client .happy-title h2::after {
+  margin-top: 12px;
+  content: "";
+  display: block;
+  border: 1px solid rgb(255, 255, 255);
+  width: 25%;
+}
+#happy-client .happy-client .happy-title p {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#happy-client .happy-client .project {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+#happy-client .happy-client .project i {
+  font-size: 35px;
+  padding: 13px;
+  border: 6px solid rgb(203, 234, 240);
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: white;
+}
+#happy-client .happy-client .project h3 {
+  font-weight: 700;
+  color: white;
+}
+#happy-client .happy-client .project h5 {
+  color: white;
+}
+
+#latest-news {
+  width: 100%;
+}
+#latest-news .latest-news .top-latest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#latest-news .latest-news .top-latest h2 {
+  font-size: 36px;
+  font-weight: 100;
+  color: rgb(83, 83, 83);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#latest-news .latest-news .top-latest h2::after {
+  display: block;
+  margin-top: 18px;
+  content: "";
+  border: 1px solid rgb(83, 83, 83);
+  width: 30%;
+  margin-bottom: 30px;
+}
+#latest-news .latest-news .top-latest p {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(83, 83, 83);
+}
+#latest-news .latest-news .sort-filter {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#latest-news .latest-news .sort-filter button {
+  padding: 5px 30px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(101, 203, 221);
+}
+#latest-news .latest-news .sort-filter input {
+  padding: 5px 30px;
+  border: 2px rgb(101, 203, 221) solid;
+  border-radius: 8px;
+}/*# sourceMappingURL=main.css.map */

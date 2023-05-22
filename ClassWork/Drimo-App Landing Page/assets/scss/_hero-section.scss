@@ -1,0 +1,105 @@
+#hero-section {
+  position: relative;
+  margin-top: 13vh;
+  width: 100%;
+  // height: 100vh;
+  background-image: url(./assets/image/server-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  #special-offer {
+    // display: none;
+    position: absolute;
+    display: inline;
+    padding: 20px 120px;
+    background-color: rgb(235, 132, 59);
+    top: 45px;
+    left: 490px;
+    color: white;
+    font-size: 23px;
+  }
+  .hero-section {
+    margin-top: 40px;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .left {
+      h2 {
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 13px;
+        font-size: 45px
+      }
+      h3 {
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 20px ;
+        font-size: 30px;
+      }
+      h5 {
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: 20px;
+        color: white;
+      }
+      .icons {
+        display: flex;
+        margin-bottom: 40px;
+        .lrow {
+          margin-top: 20px;
+          margin-right: 8%;
+          div {
+            color: white;
+            margin: 10px;
+            i {
+              color: white;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+    }
+    button {
+      padding: 10px 25px;
+      background-color: rgb(235, 132, 59);
+      color: white;
+      border: none;
+    }
+    .right {
+      padding-left: 30px;
+      img {
+        width: 450px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  #hero-section {
+    #special-offer {
+      display: none;
+    }
+    .hero-section {
+      padding-top: 50px;
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .left {
+        width: 100%;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        margin-left: 0;
+        width: 100%;
+        img {
+          width: 500px;
+          
+        }
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
