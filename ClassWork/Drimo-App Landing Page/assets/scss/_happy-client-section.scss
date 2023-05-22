@@ -40,9 +40,12 @@
       margin-bottom: 50px;
       display: flex;
       align-items: center;
+      justify-content: center;
+    
       i{
         font-size: 35px;
         padding: 13px;
+        // padding: 0;
         border: 6px solid rgb(203, 234, 240);
         border-radius: 50%;
         margin-right: 15px;

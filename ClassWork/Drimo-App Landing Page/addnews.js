@@ -16,7 +16,7 @@ if (id) {
     description.value = data.text;
     price.value = data.price;
   }
-  editFunc();
+  editFunc(id);
 }
 
 form.addEventListener("submit", async function (e) {
