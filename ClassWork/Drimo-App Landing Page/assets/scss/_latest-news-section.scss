@@ -55,6 +55,14 @@
         }
     }
 }
+.news{
+    img{
+        &:hover{
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+    }
+}
 // .delete-add{
 //     display: flex;
 //     justify-content:space-around ;
