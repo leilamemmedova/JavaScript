@@ -1,0 +1,73 @@
+#icons-header {
+  width: 100%;
+  background-color: brown;
+  .icons-header {
+    // padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      align-items: center;
+      ul {
+        // padding: 0;
+        padding-top: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          list-style: none;
+        }
+        a {
+          color: black;
+          padding-right: 15px;
+          text-decoration: none;
+          i {
+            font-size: 20px;
+          }
+        }
+        .sponsor {
+          padding: 10px 15px;
+          background-color: brown;
+          border: none;
+        }
+        .login {
+          background-color: rgb(255, 175, 71);
+          padding: 10px 15px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+#adopted-header {
+  width: 100%;
+  background-color: white;
+  .adopted-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      .ul {
+        padding-top: 5px ;
+        display:flex ;
+        align-items: center;
+        li {
+          list-style: none;
+        }
+        a {
+          color: black;
+          padding-right: 15px;
+          text-decoration: none;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

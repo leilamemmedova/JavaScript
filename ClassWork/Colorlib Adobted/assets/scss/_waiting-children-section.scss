@@ -1,0 +1,58 @@
+#waiting-children{
+    width: 100%;
+    .waiting-children{
+        padding-top: 100px;
+        .waiting-title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h6{
+                padding-top: 30px;
+                width: 60%;
+                padding-bottom: 20px;
+                color: gray;
+            }
+            button{
+                padding: 8px 15px;
+                font-size: 18px;
+            }
+        }
+        .search-sort{
+            margin: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                padding: 8px 25px;
+                  border-radius: 8px;
+                border-color: aquamarine;
+                outline: 1px aquamarine solid;
+            }
+            button{
+                 padding: 5px 25px;
+                  background-color: aquamarine;
+                 border: none;
+                 border-radius: 8px;
+                 font-size: 18px;
+            }
+        }
+    }
+}
+.cards{
+    .carde{
+      img{
+        background-size: cover;
+        &:hover{
+            opacity: 0.5;
+        }
+      }
+      .card-body{
+        margin: 10px;
+        .card-title{
+            margin: 10px;
+        }
+      }
+    }
+  
+}

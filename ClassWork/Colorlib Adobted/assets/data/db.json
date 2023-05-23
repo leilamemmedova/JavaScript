@@ -1,0 +1,28 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "image": "./assets/imgs/children_2.jpg",
+      "name": "Edward",
+      "age": "14"
+    },
+    {
+      "id": 2,
+      "image": "./assets/imgs/children_4.jpg",
+      "name": "Melissa",
+      "age": "6"
+    },
+    {
+      "id": 3,
+      "image": "./assets/imgs/children_5.jpg",
+      "name": "Jessa",
+      "age": "13"
+    },
+    {
+      "id": 4,
+      "image": "./assets/imgs/children_3.jpg",
+      "name": "Ben",
+      "age": "19"
+    }
+  ]
+}
