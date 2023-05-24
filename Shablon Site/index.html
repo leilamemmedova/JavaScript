@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+   
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <img src="./assets/images/logo (1).png" alt="" />
+          <nav>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href=""> ABOUT</a></li>
+              <li><a href="add-edit.html">ADD</a></li>
+              <li><a href="">PORTFOLIO</a></li>
+              <li><a href="">TEAM</a></li>
+              <li><a href="favorite.html">FAVORITS</a></li>
+              <li><a href="">CLIENTS</a></li>
+              <li><a href="">PRICING</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </nav>
+          <i class="fa-solid fa-bars menuBtn" style="color: #b30000;"></i>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-section">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/slide-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block carousel-text">
+              <h1>HELLO WE'RE BIZPRO</h1>
+              <h5>SUB HEAD.MOTOR OR MISSION SUBTITLE</h5>
+              <a href="">SEE OUR PROJECTS</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slide-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block carousel-text">
+              <h1>HELLO WE'RE BIZPRO</h1>
+              <h5>SUB HEAD.MOTOR OR MISSION SUBTITLE</h5>
+              <a href="">SEE OUR PROJECTS</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="about-section">
+      <div class="container">
+        <div class="about-section">
+          <div class="about-title">
+            <h1>ABOUT OUR BIZPRO</h1>
+            <p class="text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type.
+            </p>
+          </div>
+          <div class="search-sort">
+            <input
+              type="search"
+              class="searchBtn"
+              placeholder="Enter a name..."
+            />
+            <button class="btn sortBtn">Sort</button>
+          </div>
+          <div class="row cards">
+            <!-- <div class="col-lg-3 col-md-6 col-sm-12 b-card">
+              <img src="./assets/images/edit.png" alt="" />
+              <h4>WEB DEVELOPMENT</h4>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="buttons">
+                <a href="" class="btn btn-danger details my-1">More Details</a>
+                <button class="btn btn-danger delete my-1">Delete</button>
+                <a href="" class="btn btn-success edit my-1">Edit</a>
+                <a href="" class="btn btn-primary fav my-1">Add Favorites</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team-section">
+      <div class="container">
+        <div class="team-section">
+          <div class="team-title">
+            <h1>MEET OUR TEAM</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type.
+            </p>
+          </div>
+          <div class="row team-cards">
+            <div class="col-lg-4 col-md-6 col-sm-12 team-card">
+              <img src="./assets/images/team1.jpg" alt="" />
+              <div class="team-card-text">
+                <h4>Gonzalez Gina</h4>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 team-card">
+              <img src="./assets/images/team3.jpg" alt="" />
+              <div class="team-card-text">
+                <h4>Holly Vincenzini</h4>
+                <p>Media Partner</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 team-card">
+              <img src="./assets/images/team2.jpg" alt="" />
+              <div class="team-card-text">
+                <h4>Ramirez Minita</h4>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-blog">
+      <div class="container">
+        <div class="latest-blog">
+          <div class="blog-team-title">
+            <h1>MEET OUR TEAM</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type.
+            </p>
+          </div>
+          <div class="row blog-cards">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="blog-card">
+                <img src="./assets/images/blog-team3.jpg" alt="" />
+                <h5>Playback: Akufo-Addo speaks to business community</h5>
+                <h6>Posted by admin at 04 Feb, 2017</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  sagittis iaculis velit in tristique
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="blog-card">
+                <img src="./assets/images/blog-team2.jpg" alt="" />
+                <h5>Playback: Akufo-Addo speaks to business community</h5>
+                <h6>Posted by admin at 04 Feb, 2017</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  sagittis iaculis velit in tristique
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="blog-card">
+                <img src="./assets/images/blog-team1.jpg" alt="" />
+                <h5>Playback: Akufo-Addo speaks to business community</h5>
+                <h6>Posted by admin at 04 Feb, 2017</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  sagittis iaculis velit in tristique
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <footer>
+      <div class="container">
+        <div class="footer">
+          <h5>Copyright ©2023 All rights reserved | This template is made with  by Colorlib</h5>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
