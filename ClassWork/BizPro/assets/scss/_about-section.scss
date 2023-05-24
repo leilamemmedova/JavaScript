@@ -1,0 +1,104 @@
+#about-section {
+  width: 100%;
+  .about-section {
+    margin-top: 100px;
+    .about-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          border: 1px solid red;
+          width: 50px;
+          top: 60px;
+        }
+      }
+      p {
+        margin-top: 20px;
+        width: 75%;
+        margin-bottom: 50px;
+      }
+    }
+    .cards {
+      .b-card {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 25px;
+          // border: 2px solid rgb(173, 2, 2);
+          border-radius: 50%;
+          margin-bottom: 20px;
+          &:hover{
+            background-color: rgb(173, 2, 2);
+          border: 2px solid rgb(255, 255, 255);
+           
+          }
+        }
+        .buttons {
+          align-items: center;
+          padding: 10px;
+          button {
+            color: red;
+            background-color: transparent;
+            border: 1px solid red($color: #000000);
+          }
+          a {
+            background-color: transparent;
+          }
+          .fav {
+            color: blue;
+          }
+          .details {
+            color: red;
+          }
+          .edit {
+            color: green;
+          }
+        }
+      }
+    }
+    .search-sort {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin: 40px 0;
+      input {
+        padding: 8px 20px;
+        border: 2px solid rgb(179, 4, 4);
+        outline: none;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+      button {
+        padding: 8px 25px;
+        background-color: rgb(179, 4, 4);
+        outline: none;
+        border: 2px solid rgb(179, 4, 4);
+        border-radius: 8px;
+        font-size: 16px;
+        color: white;
+        &:hover {
+          background-color: white;
+          color: rgb(179, 4, 4);
+          border-color: rgb(179, 4, 4);
+          transition: all 2s;
+        }
+      }
+    }
+  }
+}
