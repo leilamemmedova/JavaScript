@@ -1,0 +1,42 @@
+#hero-section {
+  width: 100%;
+  // height: 100%;
+  .text {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h5 {
+      font-family: "Dancing Script", cursive;
+      font-size: 30px;
+      letter-spacing: 2px;
+      color: rgb(19, 97, 80);
+    }
+    p {
+      color: rgb(19, 97, 80);
+      font-size: 50px;
+    }
+  }
+  .prev-next{
+    span{
+        position: relative;
+        font-family: "Dancing Script", cursive;
+        color:rgb(19, 97, 80) ;
+        font-size: 22px;
+        font-weight: 900;
+        &:hover::before{
+            position: absolute;
+            content: "";
+            display: block;
+            border: 1px solid rgb(19, 97, 80);
+            width: 70px;
+        }
+    }
+  }
+//   .inimages{
+//     img{
+//         background-size: 400px;
+//     }
+//   }
+}
+

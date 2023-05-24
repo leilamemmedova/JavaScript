@@ -1,0 +1,70 @@
+footer {
+  width: 100%;
+  background-color: rgb(202, 235, 231);
+  .footer {
+    padding: 50px 0;
+    .follow {
+      font-family: "Kalam", cursive;
+      font-size: 25px;
+      color: rgb(19, 97, 80);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .f-col {
+        padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .buttons {
+        display: flex;
+        border-bottom: 1px solid rgb(19, 97, 80);
+        input {
+          font-family: "Farsan", cursive;
+          font-size: 18px;
+          padding: 5px 35px;
+          border: none;
+          background-color: rgb(202, 235, 231);
+        }
+        button {
+          font-family: "Farsan", cursive;
+          font-size: 20px;
+          padding: 5px 20px;
+          border: none;
+          background-color: rgb(187, 216, 213);
+          color: rgb(19, 97, 80);
+        }
+      }
+      h5 {
+        font-family: "Kalam", cursive;
+        font-size: 25px;
+        color: rgb(19, 97, 80);
+      }
+
+      ul {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        li {
+          list-style: none;
+          a {
+            font-family: "Farsan", cursive;
+            font-size: 20px;
+            position: relative;
+            text-decoration: none;
+            color: rgb(19, 97, 80);
+            &:hover::after {
+              position: absolute;
+              content: "";
+              display: block;
+              border: 1px solid rgb(19, 97, 80);
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

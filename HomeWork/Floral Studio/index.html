@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Dancing+Script:wght@600&family=Farsan&family=Kalam&family=Plus+Jakarta+Sans:wght@200&family=Sail&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Dancing+Script:wght@600&family=Plus+Jakarta+Sans:wght@200&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header">
+          <h4>Floral Studio</h4>
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="./add-edit.html">Add</a></li>
+              <li><a href="./favorite.html">Favorits</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-section">
+      <div class="hero-section">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner inimages">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/sl1-967x725.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text">
+                <h5>Floral</h5>
+                <p>Excellent bouquets for you</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/sl4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text">
+                <h5>Floral</h5>
+                <p>Excellent bouquets for you</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/sl7.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text">
+                <h5>Floral</h5>
+                <p>Excellent bouquets for you</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev prev-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="" aria-hidden="true">Prev</span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next prev-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="" aria-hidden="true">Next</span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="local-florist-section">
+      <div class="container">
+        <div class="local-florist-section">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 florist-text">
+              <h2>Local Florist Just For You</h2>
+              <p class="lorem">
+                Lorem ipsum dolor sit amet, pri autem nemore bonorum te. Autem
+                fierent ullamcorper ius no. Te tibique intellegam mediocritatem
+                his, est quis.
+              </p>
+              <p class="mary">Mary Byrd, owner</p>
+              <img src="./assets/images/signature.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 florist-image">
+              <img src="./assets/images/fl1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flowers-pricing-section">
+      <div class="container">
+        <div class="flowers-pricing-section">
+          <div id="flowers-title">
+            <p>Devoted to wonderful beauty</p>
+            <h2>Flowers Pricing</h2>
+          </div>
+          <div class="search-sort">
+            <input
+              type="search"
+              class="searchBtn"
+              placeholder="Enter a name..."
+            />
+            <button class="btn sortBtn">Sort</button>
+          </div>
+          <div class="row cards my-4">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 fl-card">
+              <img src="./assets/images/fl1.jpg" alt="">
+              <h5>name</h5>
+              <h4>price</h4>
+            </div> -->
+            <!-- <a href="">Edit</a>
+            <button class="btn">Delete</button>
+            <a href="">Add Fav</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 f-col">
+              <img src="./assets/images/signature.png" alt="" />
+              <div class="buttons">
+                <input type="text" placeholder="Your Email" />
+                <button>Send</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 f-col">
+              <ul>
+                <li><h5>About</h5></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Partners</a></li>
+                <li><a href="">Our Services</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 f-col">
+              <ul>
+                <li><h5>Contact</h5></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQ Page</a></li>
+                <li><a href="">About Me</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 follow">
+              <ul>
+                <li><h5 class="follow">Follow Us</h5></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

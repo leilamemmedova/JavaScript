@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+#header {
+  width: 100%;
+  background-color: rgb(19, 97, 80);
+}
+#header .header {
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header h4 {
+  color: white;
+}
+#header .header nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header nav ul li {
+  padding: 0;
+  list-style: none;
+}
+#header .header nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+#hero-section {
+  width: 100%;
+}
+#hero-section .text {
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero-section .text h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: rgb(19, 97, 80);
+}
+#hero-section .text p {
+  color: rgb(19, 97, 80);
+  font-size: 50px;
+}
+#hero-section .prev-next span {
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  color: rgb(19, 97, 80);
+  font-size: 22px;
+  font-weight: 900;
+}
+#hero-section .prev-next span:hover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 1px solid rgb(19, 97, 80);
+  width: 70px;
+}
+
+#local-florist-section {
+  width: 100%;
+}
+#local-florist-section .local-florist-section {
+  padding: 130px 40px;
+}
+#local-florist-section .local-florist-section .florist-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#local-florist-section .local-florist-section .florist-text h2 {
+  width: 50%;
+  color: rgb(19, 97, 80);
+}
+#local-florist-section .local-florist-section .florist-text .lorem {
+  letter-spacing: 2px;
+}
+#local-florist-section .local-florist-section .florist-text .mary {
+  font-family: "Dancing Script", cursive;
+  color: rgb(19, 97, 80);
+  font-size: 20px;
+}
+#local-florist-section .local-florist-section .florist-text img {
+  width: 200px;
+}
+#local-florist-section .local-florist-section .florist-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 778px) {
+  #local-florist-section .local-florist-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #local-florist-section .florist-image {
+    margin-top: 30px;
+  }
+}
+#flowers-pricing-section {
+  width: 100%;
+  background-image: url(/assets/images/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#flowers-pricing-section .flowers-pricing-section {
+  padding: 100px 0;
+}
+#flowers-pricing-section .flowers-pricing-section #flowers-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+#flowers-pricing-section .flowers-pricing-section #flowers-title p {
+  font-family: "Dancing Script", cursive;
+  color: rgb(19, 97, 80);
+  font-size: 20px;
+}
+#flowers-pricing-section .flowers-pricing-section #flowers-title h2 {
+  font-size: 42px;
+  font-weight: 400;
+  color: rgb(19, 97, 80);
+}
+#flowers-pricing-section .flowers-pricing-section .search-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+#flowers-pricing-section .flowers-pricing-section .search-sort input {
+  padding: 8px 20px;
+  border: 2px solid rgb(19, 97, 80);
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+#flowers-pricing-section .flowers-pricing-section .search-sort button {
+  padding: 8px 25px;
+  background-color: rgb(19, 97, 80);
+  outline: none;
+  border: 2px solid rgb(19, 97, 80);
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+}
+#flowers-pricing-section .flowers-pricing-section .search-sort button:hover {
+  background-color: white;
+  color: rgb(19, 97, 80);
+  border-color: rgb(19, 97, 80);
+  transition: all 2s;
+}
+#flowers-pricing-section .flowers-pricing-section .cards {
+  padding: 20px;
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card h5 {
+  font-family: "Kalam", cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  color: rgb(19, 97, 80);
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card h4 {
+  font-family: "Sail", cursive;
+  color: rgb(19, 97, 80);
+  font-size: 17px;
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card img {
+  width: 280px;
+  height: 300px;
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card img:hover {
+  opacity: 0.5;
+}
+#flowers-pricing-section .flowers-pricing-section .cards .fl-card .buttons {
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(202, 235, 231);
+}
+footer .footer {
+  padding: 50px 0;
+}
+footer .footer .follow {
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: rgb(19, 97, 80);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer .footer .f-col {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer .f-col .buttons {
+  display: flex;
+  border-bottom: 1px solid rgb(19, 97, 80);
+}
+footer .footer .f-col .buttons input {
+  font-family: "Farsan", cursive;
+  font-size: 18px;
+  padding: 5px 35px;
+  border: none;
+  background-color: rgb(202, 235, 231);
+}
+footer .footer .f-col .buttons button {
+  font-family: "Farsan", cursive;
+  font-size: 20px;
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(187, 216, 213);
+  color: rgb(19, 97, 80);
+}
+footer .footer .f-col h5 {
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: rgb(19, 97, 80);
+}
+footer .footer .f-col ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer .f-col ul li {
+  list-style: none;
+}
+footer .footer .f-col ul li a {
+  font-family: "Farsan", cursive;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  color: rgb(19, 97, 80);
+}
+footer .footer .f-col ul li a:hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border: 1px solid rgb(19, 97, 80);
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

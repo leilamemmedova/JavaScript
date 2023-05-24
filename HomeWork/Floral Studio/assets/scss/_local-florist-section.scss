@@ -1,0 +1,42 @@
+#local-florist-section {
+  width: 100%;
+  .local-florist-section {
+    padding: 130px 40px;
+    .florist-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        width: 50%;
+        color: rgb(19, 97, 80);
+      }
+      .lorem {
+        letter-spacing: 2px;
+      }
+      .mary {
+        font-family: "Dancing Script", cursive;
+        color: rgb(19, 97, 80);
+        font-size: 20px;
+      }
+      img {
+        width: 200px;
+      }
+    }
+    .florist-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width:778px){
+    #local-florist-section{
+        .local-florist-section{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .florist-image{
+           margin-top: 30px
+        }
+    }
+}

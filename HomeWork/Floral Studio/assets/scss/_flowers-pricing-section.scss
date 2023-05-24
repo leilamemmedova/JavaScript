@@ -1,0 +1,84 @@
+#flowers-pricing-section {
+  width: 100%;
+  background-image: url(/assets/images/bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .flowers-pricing-section {
+    padding: 100px 0;
+    #flowers-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 70px;
+      p {
+        font-family: "Dancing Script", cursive;
+        color: rgb(19, 97, 80);
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 42px;
+        font-weight: 400;
+        color: rgb(19, 97, 80);
+      }
+    }
+    .search-sort {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      input {
+        padding: 8px 20px;
+        border: 2px solid rgb(19, 97, 80);
+        outline: none;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+      button {
+        padding: 8px 25px;
+        background-color: rgb(19, 97, 80);
+        outline: none;
+        border: 2px solid rgb(19, 97, 80);
+        border-radius: 8px;
+        font-size: 16px;
+        color: white;
+        &:hover {
+          background-color: white;
+          color: rgb(19, 97, 80);
+          border-color: rgb(19, 97, 80);
+          transition: all 2s;
+        }
+      }
+    }
+    .cards {
+      padding: 20px;
+      .fl-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+        h5 {
+          font-family: "Kalam", cursive;
+          font-size: 22px;
+          margin-top: 10px;
+          color: rgb(19, 97, 80);
+        }
+        h4 {
+          font-family: "Sail", cursive;
+          color: rgb(19, 97, 80);
+          font-size: 17px;
+        }
+        img {
+          width: 280px;
+          height: 300px;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .buttons{
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

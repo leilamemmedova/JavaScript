@@ -1,0 +1,57 @@
+{
+  "flowers": [
+    {
+      "id": 1,
+      "image": "./assets/images/b2.jpg",
+      "name": "Dahlia",
+      "price": "45"
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/b4.jpg",
+      "name": "Mazus",
+      "price": "15"
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/b3.jpg",
+      "name": "Pansies",
+      "price": "25"
+    },
+    {
+      "id": 4,
+      "image": "./assets/images/b2.jpg",
+      "name": "Dahlia",
+      "price": "60"
+    },
+    {
+      "id": 5,
+      "image": "./assets/images/b4.jpg",
+      "name": "Mazus",
+      "price": "20"
+    },
+    {
+      "id": 7,
+      "image": "./assets/images/b2.jpg",
+      "name": "Dahlia",
+      "price": "50"
+    },
+    {
+      "id": 8,
+      "image": "./assets/images/b3.jpg",
+      "name": "Pansies",
+      "price": "65"
+    },
+    {
+      "id": 6,
+      "image": "./assets/images/b4.jpg",
+      "name": "Mazus",
+      "price": "40"
+    },
+    {
+      "name": "Mona",
+      "price": "74",
+      "id": 9
+    }
+  ]
+}
