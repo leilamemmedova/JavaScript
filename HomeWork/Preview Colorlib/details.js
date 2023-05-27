@@ -12,12 +12,12 @@ async function getDetails(id) {
   let data = await res.data;
   console.log(data);
   card.innerHTML = `
-        <img src="./assets/images/${data.images}" alt="" />
-          <h4 class="text-center">${data.name}</h4>
-          <p class="text-center">
+        <img src="/assets/images/${data.image}" alt="" />
+          <h4 class="text-center my-3">${data.name}</h4>
+          <p class="text-center my-3">
             ${data.description}
           </p>
-          <p class="text-center">${data.price}</p>
+          <p class="text-center my-3">${data.price}</p>
     `;
 }
-getDetails();
+getDetails(id);

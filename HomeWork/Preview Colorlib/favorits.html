@@ -16,18 +16,73 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./main.css">
     <title>Favorits</title>
     <style>
-      .container {
+      section {
         margin: 100px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <header id="header">
+      <div class="container">
+        <div class="header-1">
+          <p class="text-start">We believe we helps people for happier lives</p>
+          <img src="assets/images/logo (1).png" alt="" />
+          <nav>
+            <ul>
+              <li>+880 123 12 658 439</li>
+              <li><i class="fa-solid fa-phone" style="color: #ffffff"></i></li>
+            </ul>
+          </nav>
+          <i class="fa-solid fa-bars menuBtn" style="color: rgb(169, 9, 9)"></i>
+        </div>
+      </div>
+      <hr />
+      <div class="header-2">
+        <div class="container">
+          <nav>
+            <ul class="pages">
+              <li><a href="#hero-section" class="home">HOME</a></li>
+              <li><a href="">WE OFFER</a></li>
+              <li><a href="add-edit.html">ADD</a></li>
+              <li><a href="#top-course">TOP COURSE</a></li>
+              <li><a href="favorits.html">BASKETS</a></li>
+              <li><a href="">PLAN</a></li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Generic</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Elements</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
       <a href="./index.html" class="btn btn-primary my-5">Go back</a>
       <div class="row cards my-3 m-5"></div>
     </div>
-    <script src="/assets/js/favorits.js"></script>
+    </section>
+    
+    <script src="/favorits.js"></script>
   </body>
 </html>
