@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Gym</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-1">
+          <p class="text-start">We believe we helps people for happier lives</p>
+          <img src="assets/images/logo (1).png" alt="" />
+          <nav>
+            <ul>
+              <li>+880 123 12 658 439</li>
+              <li><i class="fa-solid fa-phone" style="color: #ffffff"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr />
+      <div class="header-2">
+        <div class="container">
+          <nav>
+            <ul class="pages">
+              <li><a href="index.html" class="home">HOME</a></li>
+              <li><a href="">WE OFFER</a></li>
+              <li><a href="add-edit.html">ADD</a></li>
+              <li><a href="">TOP COURSE</a></li>
+              <li><a href="favorits.html">BASKETS</a></li>
+              <li><a href="">PLAN</a></li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Generic</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Elements</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero-section">
+      <div class="hero-bg">
+        <div class="container">
+          <div class="hero-section">
+            <h1 class="text-center">REAL FITNESS DEPENDS ON EXERCISE</h1>
+            <p>SHAPE YOUR BODY WELL.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="care-about">
+      <div class="container">
+        <div class="care-about">
+          <div class="care-title">
+            <h1>We care about what we offer</h1>
+            <p>Who are in extremely love with eco friendly system.</p>
+          </div>
+          <div class="search-sort">
+            <input class="search" type="search" placeholder="Enter a name" />
+            <button class="sort">Sort</button>
+          </div>
+          <div class="row cards">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="care-card">
+                <img src="./assets/images/o1.png" alt="" />
+                <h4 class="text-center">Regular Exercise</h4>
+                <p class="text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="buttons">
+                  <a class="btn btn-danger" href="">DELETE</a>
+                  <a class="btn btn-warning" href="">MORE DETAILS</a>
+                  <a class="btn btn-primary" href="">ADD BASKETS</a>
+                  <a class="btn btn-success" href="">EDIT</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <button class="btn load-more">LOAD MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-course">
+      <div class="container">
+        <div class="top-course">
+          <div class="top-title">
+            <h1>Top Courses That are open for Students</h1>
+            <p>Who are in extremely love with eco friendly system.</p>
+          </div>
+          <div class="row course-cards">
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c1.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Running Classes</span>
+                  <p>$275</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c2.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Weight Lifting Classes</span>
+                  <p>$200</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c3.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Body Combat Classes</span>
+                  <p>$225</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c4.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Organic Yoga Classes</span>
+                  <p>$300</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c5.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Raw Fitness Classes</span>
+                  <p>$500</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 t-col">
+              <div class="course-card">
+                <img src="./assets/images/c6.jpg" alt="" />
+                <a>Course Available</a>
+                <div class="course-button">
+                  <span>Body Building Classes</span>
+                  <p>$250</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="huge-section">
+      <div class="huge-bg">
+        <div class="container">
+          <div class="huge-section">
+            <h1>Huge Transaction in last Week</h1>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            <a href="">BECOME A MEMBER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

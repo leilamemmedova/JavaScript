@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+}
+#header .header-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#header .header-1 p {
+  width: 17%;
+  font-weight: 500;
+  margin: 0;
+}
+#header .header-1 nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#header .header-1 nav ul li {
+  font-weight: 500;
+}
+#header .header-1 nav ul li i {
+  margin-left: 10px;
+  padding: 25px 30px;
+  background-color: #f6214b;
+  font-size: 18px;
+}
+#header hr {
+  margin: 0;
+}
+#header .header-2 {
+  margin: 13px 0;
+}
+#header .header-2 nav .pages {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .header-2 nav .pages li {
+  list-style: none;
+  margin: 0 15px;
+}
+#header .header-2 nav .pages li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+#header .header-2 nav .pages li .home {
+  color: #f6214b;
+}
+
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero-section .hero-bg {
+  background-color: rgba(31, 30, 30, 0.7);
+}
+#hero-section .hero-bg .hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#hero-section .hero-bg .hero-section h1 {
+  width: 52%;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+#hero-section .hero-bg .hero-section p {
+  color: white;
+}
+
+#care-about {
+  width: 100%;
+}
+#care-about .care-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#care-about .care-about .care-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#care-about .care-about .care-title h1 {
+  margin-top: 100px;
+}
+#care-about .care-about .care-title p {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+#care-about .care-about .search-sort {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#care-about .care-about .search-sort input {
+  margin: 15px 0;
+  padding: 8px 60px;
+  border: 1px solid #f6214b;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #f6214b;
+  outline: none;
+}
+#care-about .care-about .search-sort button {
+  padding: 8px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #f6214b;
+  color: white;
+}
+#care-about .care-about .cards {
+  margin: 20px 0;
+}
+#care-about .care-about .cards .care-card {
+  border: 1px solid #f6214b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+#care-about .care-about .cards .care-card img {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+}
+#care-about .care-about .cards .care-card h4 {
+  margin: 20px;
+}
+#care-about .care-about .cards .care-card p {
+  height: 8vh;
+  margin: 0 7px;
+  margin-bottom: 12px;
+  color: gray;
+}
+#care-about .care-about .cards .care-card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+#care-about .care-about .cards .care-card .buttons a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 5px;
+}
+#care-about .care-about button {
+  background-color: #f6214b;
+  color: white;
+}
+#care-about .care-about button:hover {
+  background-color: transparent;
+  border: 1px solid #f6214b;
+  color: #f6214b;
+  transition: all 1s;
+}
+
+#top-course {
+  width: 100%;
+}
+#top-course .top-course .top-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#top-course .top-course .top-title h1 {
+  margin-top: 100px;
+}
+#top-course .top-course .top-title p {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+#top-course .top-course .course-cards {
+  padding: 0 70px;
+}
+#top-course .top-course .course-cards .t-col {
+  padding: 0 40px;
+  margin-top: 30px;
+  position: relative;
+}
+#top-course .top-course .course-cards .t-col .course-card {
+  width: 350px;
+  border: 1px solid black;
+}
+#top-course .top-course .course-cards .t-col .course-card img {
+  width: 350px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+#top-course .top-course .course-cards .t-col .course-card a {
+  font-size: 16px;
+  font-weight: 200;
+  position: absolute;
+  padding: 8px 40px;
+  background-color: #f6214b;
+  color: white;
+  margin: 30px 0;
+  top: 115px;
+  left: 55px;
+}
+#top-course .top-course .course-cards .t-col .course-card .course-button {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#top-course .top-course .course-cards .t-col .course-card .course-button span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+#top-course .top-course .course-cards .t-col .course-card .course-button p {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 600;
+  margin-right: 5px;
+  color: #f6214b;
+}
+
+#huge-section {
+  width: 100%;
+  height: 50vh;
+  margin: 100px 0;
+  background-image: url(/assets/images/callto-bg.jpg);
+  background-size: cover;
+}
+#huge-section .huge-bg {
+  background-color: rgba(29, 29, 29, 0.7);
+}
+#huge-section .huge-bg .huge-section {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#huge-section .huge-bg .huge-section h1 {
+  font-weight: 600;
+  color: white;
+}
+#huge-section .huge-bg .huge-section p {
+  margin: 15px 0;
+  width: 62%;
+  color: white;
+}
+#huge-section .huge-bg .huge-section a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 40px;
+  background-color: #f6214b;
+  border: 1px solid #f6214b;
+  border-radius: 25px;
+  color: white;
+  margin: 30px 0;
+}
+#huge-section .huge-bg .huge-section a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 1s;
+}/*# sourceMappingURL=main.css.map */
