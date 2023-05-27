@@ -6,6 +6,38 @@
   box-sizing: border-box;
 }
 
+.burger-modal {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(17, 17, 17, 0.9);
+}
+.burger-modal .burger-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.burger-modal .burger-nav ul li {
+  margin: 20px 0;
+  list-style: none;
+}
+.burger-modal .burger-nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.burger-modal #modal-remove {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 40px;
+  color: white;
+  margin: 20px;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -37,10 +69,14 @@
   background-color: #f6214b;
   font-size: 18px;
 }
+#header .header-1 .menuBtn {
+  display: none;
+}
 #header hr {
   margin: 0;
 }
 #header .header-2 {
+  display: block;
   margin: 13px 0;
 }
 #header .header-2 nav .pages {
@@ -63,6 +99,28 @@
   color: #f6214b;
 }
 
+@media only screen and (max-width: 991px) {
+  #header .container .header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  #header .container .header-1 p {
+    display: none;
+  }
+  #header .container .header-1 nav {
+    display: none;
+  }
+  #header .container .header-1 .menuBtn {
+    font-size: 24px;
+    color: #f6214b;
+    display: block;
+  }
+  #header .header-2 {
+    display: none;
+  }
+}
 #hero-section {
   width: 100%;
   height: 100vh;
@@ -203,51 +261,51 @@
   margin-top: 15px;
   margin-bottom: 50px;
 }
-#top-course .top-course .course-cards {
-  padding: 0 70px;
+#top-course .top-course .t-col {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#top-course .top-course .course-cards .t-col {
-  padding: 0 40px;
-  margin-top: 30px;
+#top-course .top-course .t-col .img-button {
   position: relative;
 }
-#top-course .top-course .course-cards .t-col .course-card {
-  width: 350px;
-  border: 1px solid black;
-}
-#top-course .top-course .course-cards .t-col .course-card img {
-  width: 350px;
+#top-course .top-course .t-col .img-button img {
   background-size: cover;
-  margin-bottom: 20px;
+  width: 300px;
+  height: 230px;
+  margin-top: 30px;
 }
-#top-course .top-course .course-cards .t-col .course-card a {
-  font-size: 16px;
-  font-weight: 200;
+#top-course .top-course .t-col .img-button img:hover {
+  transform: scale(1.1);
+}
+#top-course .top-course .t-col .img-button a {
   position: absolute;
-  padding: 8px 40px;
+  bottom: 20px;
+  left: 10px;
+  padding: 6px 50px;
   background-color: #f6214b;
   color: white;
-  margin: 30px 0;
-  top: 115px;
-  left: 55px;
 }
-#top-course .top-course .course-cards .t-col .course-card .course-button {
-  margin-bottom: 30px;
+#top-course .top-course .t-col .course-button {
+  margin: 15px 0;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#top-course .top-course .course-cards .t-col .course-card .course-button span {
+#top-course .top-course .t-col .course-button span {
   font-size: 20px;
-  font-weight: 600;
-  margin-left: 5px;
+  font-weight: 500;
 }
-#top-course .top-course .course-cards .t-col .course-card .course-button p {
+#top-course .top-course .t-col .course-button p {
   margin: 0;
-  font-size: 21px;
-  font-weight: 600;
-  margin-right: 5px;
   color: #f6214b;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 #huge-section {
@@ -292,4 +350,46 @@
   color: white;
   border: 1px solid white;
   transition: all 1s;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer p {
+  margin: 0;
+  color: #777777;
+}
+footer .footer p span {
+  color: #f6214b;
+}
+footer .footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+footer .footer .icons i {
+  font-size: 16px;
+  padding: 15px;
+  background-color: rgb(33, 33, 33);
+  margin: 0 4px;
+  color: #777777;
+}
+footer .footer .icons i:hover {
+  background-color: #f6214b;
+  color: #777777;
+}
+@media only screen and (max-width: 778px) {
+  footer .icons {
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
 }/*# sourceMappingURL=main.css.map */

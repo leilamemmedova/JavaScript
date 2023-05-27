@@ -2,6 +2,9 @@ let cards = document.querySelector(".cards");
 let searchBtn = document.querySelector(".search");
 let sortBtn = document.querySelector(".sort");
 let loadMore = document.querySelector(".load-more");
+let menuBtn= document.querySelector(".menuBtn")
+let modalRemove= document.querySelector("#modal-remove")
+let burgerModal= document.querySelector(".burger-modal")
 
 let BASE_URL = "http://localhost:8080/exercises";
 let filtered = [];
@@ -92,3 +95,10 @@ async function favFunc(id) {
     alert("hehehe");
   }
 }
+
+menuBtn.addEventListener("click", function(){
+  burgerModal.style.display="block"
+})
+modalRemove.addEventListener("click", function(){
+  burgerModal.style.display="none"
+})

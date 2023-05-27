@@ -1,18 +1,11 @@
 {
   "exercises": [
     {
-      "id": 1,
-      "image": "o1.png",
-      "name": "Regular Exercise",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "price": 100
-    },
-    {
       "id": 2,
-      "image": "o2.png",
-      "name": "Training on the go",
+      "image": "o1.png",
+      "name": "Training on the goes",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "price":70
+      "price": "70"
     },
     {
       "id": 3,
@@ -41,13 +34,6 @@
       "name": "Body Building Packages",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       "price": 50
-    },
-    {
-      "id": 7,
-      "name": "Shaeleigh Salinas",
-      "description": "Provident ipsum ex",
-      "price": 69,
-      "image": "o2.png"
     }
   ]
 }
