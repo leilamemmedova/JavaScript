@@ -58,56 +58,53 @@ loadMore.addEventListener("click", function () {
   getAllData();
 });
 
-searchBtn.addEventListener("input", function (e) {
-  filtered = allData.filter((item) =>
-    item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
-  );
-  getAllData();
-});
-
-let bool=true
-sortBtn.addEventListener("click", function(){
-    if(bool){
-        filtered.sort((a,b)=> a.price.localeCompare(b.price))
-        bool=false
-        getAllData()
-    }else{
-        filtered.sort((a, b) => b.price.localeCompare(a.price));
-        bool=true
-        getAllData()
-    }
+searchBtn.addEventListener("input", function(e){
+ filtered= allData.filter((item)=>item.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()))
+  getAllData()
 })
 
-// sortBtn.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   if (sortBtn.value == "Ascending") {
-//     sortBtn.innerHTML = "Descending";
-//     filtered.sort((a, b) => a.price.localeCompare(b.price));
-//     getAllData();
-//   } else if (sortBtn.value == "Descending") {
-//     sortBtn.innerHTML = "Default";
-//     filtered.sort((a, b) => b.price.localeCompare(a.price));
-//     getAllData();
-//   } else {
-//     sortBtn.innerHTML = "Ascending";
-//     filtered = defaultArr;
-//     getAllData();
-//   }
-// });
+// let bool=true
+// sortBtn.addEventListener("click", function(){
+//     if(bool){
+//         filtered.sort((a,b)=> a.price.localeCompare(b.price))
+//         bool=false
+//         getAllData()
+//     }else{
+//         filtered.sort((a, b) => b.price.localeCompare(a.price));
+//         bool=true
+//         getAllData()
+//     }
+// })
 
+sortBtn.addEventListener("click", function(e){
+  e.preventDefault()
+  if(sortBtn.innerHTML=="sort"){
+    sortBtn.innerHTML="asc"
+    filtered.sort((a,b)=>a.price.localeCompare(b.price))
+    getAllData()
+  }else if(sortBtn.innerHTML=="asc"){
+    sortBtn.innerHTML="desc"
+    filtered.sort((a, b) => b.price.localeCompare(a.price));
+    getAllData()
+  }else{
+    sortBtn.innerHTML="sort"
+    filtered=defaultArr
+    getAllData()
+  }
+})
 
 let favData= JSON.parse(localStorage.getItem("favData"))
 
 async function favFunc(id){
-    let res= await axios(`${BASE_URL}/${id}`)
-    let data= await res.data
-    let available= favData.find((item)=> item.id==id)
-    if(!available){
-        favData.push(data)
-        localStorage.setItem("favData", JSON.stringify(favData))
-    }else{
-        alert("Product already exists in favorite list!");
-    }
+  let res= await axios(`${BASE_URL}/${id}`)
+  let data=res.data
+  let available=favData.find((item)=>item.id==id)
+  if(!available){
+    favData.push(data)
+    localStorage.setItem("favData", JSON.stringify(favData))
+  }else{
+    alert("this is have")
+  }
 }
 
 menuBtn.addEventListener("click", function(){
