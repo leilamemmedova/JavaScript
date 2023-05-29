@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "watch.png",
+      "category": "Accessories",
+      "name": "Quartz Belt Watch",
+      "price": "150"
+    },
+    {
+      "id": 2,
+      "image": "cream.png",
+      "category": "Beauty",
+      "name": "Women Freshwash",
+      "price": "200"
+    },
+    {
+      "id": 3,
+      "image": "product8.png",
+      "category": "Decor",
+      "name": "Room Flash Light Leyla",
+      "price": "120"
+    },
+    {
+      "id": 4,
+      "image": "product4.png",
+      "category": "Decor",
+      "name": "Room Flash Light",
+      "price": "500"
+    },
+    {
+      "id": 5,
+      "image": "product5.png",
+      "category": "Accessories",
+      "name": "Man Office Bag",
+      "price": "300"
+    },
+    {
+      "id": 6,
+      "image": "product6.png",
+      "category": "Kids Toy",
+      "name": "Charging Car",
+      "price": "100"
+    },
+    {
+      "id": 7,
+      "image": "product7.png",
+      "category": "Accessories",
+      "name": "Blutooth Speaker",
+      "price": "600"
+    },
+    {
+      "id": 8,
+      "image": "product8.png",
+      "category": "Kids Toy",
+      "name": "Charging Car",
+      "price": "120"
+    },
+    {
+      "id": 9,
+      "image": "product3.png",
+      "category": "Accessories",
+      "name": "Quartz Belt Watch",
+      "price": "800"
+    },
+    {
+      "name": "Jennifer Booker",
+      "price": "790",
+      "category": "decor",
+      "image": "product7.png",
+      "id": 10
+    }
+  ]
+}

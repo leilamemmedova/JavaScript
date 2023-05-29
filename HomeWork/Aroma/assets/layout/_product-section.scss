@@ -1,0 +1,101 @@
+#products-section {
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  .products-section {
+    padding: 0 50px;
+    .products-title {
+      width: 100%;
+      margin-bottom: 50px;
+      h2 {
+        font-weight: 600;
+        font-size: 38px;
+      }
+    }
+    .search-sort {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 20px;
+      input {
+        padding: 8px 50px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        color: blue;
+        font-size: 18px;
+        outline: none;
+      }
+      a {
+        text-decoration: none;
+        padding: 9px 30px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+      }
+    }
+    .products {
+      margin: 15px 0;
+      width: 100%;
+      .product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .product-img {
+          position: relative;
+          .buttons {
+            display: none;
+          }
+        }
+        .product-detail {
+          height: 18vh;
+          margin: 15px 0;
+          .name {
+            text-decoration: none;
+            color: black;
+          }
+          .price {
+            color: gray;
+          }
+        }
+        &:hover {
+          .product-img {
+            .buttons {
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              padding: 20px;
+              background-color: aliceblue;
+              opacity: 0.8;
+              display: block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              // transform: translate(0,-60px);
+              // transition: all 2s;
+              i {
+                padding: 12px;
+                margin: 8px;
+                background-color: blue;
+              }
+            }
+          }
+          .product-detail {
+            .name {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+    .load-more {
+      text-decoration: none;
+      padding: 10px 40px;
+      background-color: blue;
+      border-radius: 20px;
+      color: white;
+      // margin: 40px 500px;
+    }
+  }
+}
